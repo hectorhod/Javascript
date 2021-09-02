@@ -12,4 +12,4 @@ Grupo:
 ==================================================================================
 
 Proposta:
-    Criar um web-app para gerenciar ensino à distância.
+    Criar um web-app para gerenciar ensino à distância e salvar no GitHub.
