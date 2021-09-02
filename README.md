@@ -1,6 +1,4 @@
-Repositório para projeto Interdisciplinar do Curso Ciências da Compuação - Unitri
-
-======================================================
+# Repositório para projeto Interdisciplinar do Curso Ciências da Compuação - Unitri
 
 Grupo:
 
@@ -9,34 +7,36 @@ Grupo:
     Natanael
     Vilson
 
-======================================================
-
-Proposta:
+# Proposta:
     Criar um web-app para gerenciar ensino à distância e salvar no GitHub.
 
-======================================================
+# COMANDOS BÁSICOS GITHUB:
 
-COMANDOS BÁSICOS GITHUB:
+## Para iniciar o git no projeto:
+### 'git init'
+Esse comando deve ser chamado apenas na primeira vez que for usar
 
-Para iniciar o git no projeto:
-## git init
+## Adicionar Itens:
+### 'git add <nome_do_arquivo>'
+Adiciona um arquivo específico ou:
+### 'git add --all'
+Adiciona todos os arquivos, exceto o que for listado em '.GitIgnore'
 
-Adicionar Itens:
-## git add <nome_do_arquivo>
-ou
-## git add --all
+## Comentários:
+### 'git commit -m "Isira comentário aqui"'
 
-Comentários:
-## git commit -m "Isira comentário aqui"
+## Ligando os Repositórios:
+### 'git remote add origin https://github.com/hectorhod/Javascript.git'
+Este comando configura a referencia do servidor no projeto, é feito apenas na criaçao do mesmo ou quando precisar alterar o link do repositório. Não deve ser usado em repositórios clonados.
 
-Ligando os Repositórios:
-## git remote add origin https://github.com/hectorhod/Javascript.git
+## Enviar arquivos (Brench master):
+### 'git push -u origin master'
+Envia o arquivo para a brench 'master', caso precise ultilizar outra brench, é só alterar o nome.
 
-Enviar arquivos (Brench master):
-## git push -u origin master
+## Atualizar arquivos locais:
+### 'git pull'
+Atualiza os arquivos locais de acordo com os arquivos do servidor.
 
-Atualizar arquivos locais:
-## git pull
-
-Clonar Repositório:
-## git clone https://github.com/hectorhod/Javascript.git
+## Clonar Repositório:
+### 'git clone https://github.com/hectorhod/Javascript.git'
+Método utilizado para baixar o projeto em desenvolvimento no seu computador pela primeira vez.
