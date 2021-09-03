@@ -7,9 +7,10 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% docs.forEach(function(user){ %>
+      <% docs.forEach(function(users){ %>
         <li>
-            <%= user.username %> | <%= user.email %>
+            <!--<%= users.username %> | <%= users.email %>-->
+            <a href="mailto:<%= users.mail %>"><%= users.username %></a>
         </li>
       <% }) %>
     </ul>
