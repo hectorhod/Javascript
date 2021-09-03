@@ -22,8 +22,8 @@ router.get('/', async (req, res) => {
 });
 
 /* GET New User page. */
-/*router.get('/user', (req, res) => {
-  res.render('user', { title: 'Cadastro de Usuário' });
+router.get('/users', (req, res) => {
+  res.render('users', { title: 'Cadastro de Usuário' });
 });
 
 /* POST new user */

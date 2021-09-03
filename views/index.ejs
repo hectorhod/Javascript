@@ -7,9 +7,9 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% docs.forEach(function(users){ %>
+      <% docs.forEach(function(user){ %>
         <li>
-            <%= users.username %> | <%= users.email %>
+            <%= user.username %> | <%= user.email %>
         </li>
       <% }) %>
     </ul>
