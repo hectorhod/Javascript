@@ -1,42 +1,56 @@
 # Repositório para projeto Interdisciplinar do Curso Ciências da Compuação - Unitri
 
 Grupo:
-
-    -Hector
-    -Lincoln
-    -Natanael
-    -Vilson
+   - Hector
+   - Lincoln
+   - Natanael
+   - Vilson
 
 ## Proposta:
-    Criar um web-app para gerenciar ensino à distância e salvar no GitHub.
+   Criar um web-app para gerenciar ensino à distância e salvar no GitHub.
+   
+## Ferramentas:
+   - [NodeJS](https://nodejs.org/en/)
+   - [MongoDB](https://www.mongodb.com/pt-br)
+
+## COMANDOS:
+
+Antes de testar o app, deve-se iniciar o banco de dados MongoDB:
+     
+    mongod -dbpath *diretório_do_app*/data
+     
+Feito isso, pode-se iniciar o projeto usando:
+
+    npm start
 
 ## COMANDOS BÁSICOS GITHUB:
 
-###### Para iniciar o git no projeto:
+##### Para iniciar o git no projeto:
     'git init'
 Esse comando deve ser chamado apenas na primeira vez que for usar
 
-###### Adicionar Itens:
+##### Adicionar Itens:
     'git add <nome_do_arquivo>'
 Adiciona um arquivo específico ou:
+
     'git add --all'
 Adiciona todos os arquivos, exceto o que for listado em '.gitignore'
 
-###### Comentários:
+##### Comentários:
     'git commit -m "Isira comentário aqui"'
 
-###### Ligando os Repositórios:
+##### Ligando os Repositórios:
     'git remote add origin https://github.com/hectorhod/Javascript.git'
 Este comando configura a referencia do servidor no projeto, é feito apenas na criaçao do mesmo ou quando precisar alterar o link do repositório. Não deve ser usado em repositórios clonados.
 
-###### Enviar arquivos (Brench master):
+##### Enviar arquivos (Brench master):
     'git push -u origin master'
 Envia o arquivo para a brench 'master', caso precise ultilizar outra brench, é só alterar o nome.
 
-###### Atualizar arquivos locais:
+##### Atualizar arquivos locais:
     'git pull'
 Atualiza os arquivos locais de acordo com os arquivos do servidor.
 
-###### Clonar Repositório:
+##### Clonar Repositório:
     'git clone https://github.com/hectorhod/Javascript.git'
 Método utilizado para baixar o projeto em desenvolvimento no seu computador pela primeira vez.
