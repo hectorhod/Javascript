@@ -1,4 +1,4 @@
-# Repositório para projeto Interdisciplinar do Curso Ciências da Compuação - Unitri
+# Repositório para projeto Interdisciplinar do Curso Ciências da Computação - Unitri
 
 Grupo:
 
