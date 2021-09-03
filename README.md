@@ -1,4 +1,4 @@
-# Repositório para projeto Interdisciplinar do Curso Ciências da Computação - Unitri
+# Repositório para projeto Interdisciplinar do Curso Ciências da Compuação - Unitri
 
 Grupo:
 
@@ -19,8 +19,8 @@ Esse comando deve ser chamado apenas na primeira vez que for usar
 ###### Adicionar Itens:
     'git add <nome_do_arquivo>'
 Adiciona um arquivo específico ou:
-    git add -all
-Adiciona todos os arquivos, exceto o que for listado em '.GitIgnore'
+    'git add --all'
+Adiciona todos os arquivos, exceto o que for listado em '.gitignore'
 
 ###### Comentários:
     'git commit -m "Isira comentário aqui"'
