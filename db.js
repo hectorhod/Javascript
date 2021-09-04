@@ -1,18 +1,16 @@
 const mongoose = require('mongoose');
-const server = 'mongodb://localhost:27017/'
-const database = 'dadosdb';
+//const server = 'mongodb://localhost:27017/'
+//const database = 'dadosdb';
+const uri = "mongodb+srv://dbUser:userDB1234@cluster0.qpj9v.mongodb.net/dadosdb?retryWrites=true&w=majority";
 
-mongoose.connect(server+database).then(() => {
+mongoose.connect(uri).then(() => {
         console.log("Succesfully connect to MongoDB.");
     })
         .catch(err => {
             console.error("Connection error", err);
             process.exit();
         });
-/* Esta função esta com erro no 'collection'
-function findAll(){
-    return global.conn.collection("users").find().toArray();
-}*/
+
 
 const userSchema = new mongoose.Schema({
     username: String,
@@ -20,5 +18,4 @@ const userSchema = new mongoose.Schema({
 }, { collection: 'users'}
 );
 
-//module.exports = { findAll }
-module.exports = {Mongoose:mongoose, UserSchema:userSchema}
+module.exports = {Mongoose:mongoose, UserSchema:userSchema};
