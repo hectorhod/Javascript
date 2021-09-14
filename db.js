@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-//const server = 'mongodb://localhost:27017/'
-//const database = 'dadosdb';
-const uri = "mongodb+srv://dbUser:userDB1234@cluster0.qpj9v.mongodb.net/dadosdb?retryWrites=true&w=majority";
+const server = 'mongodb://localhost:27017/'
+const database = 'dadosdb';
+//const uri = "mongodb+srv://dbUser:userDB1234@cluster0.qpj9v.mongodb.net/teste?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true";
 
-mongoose.connect(uri).then(() => {
+mongoose.connect(server + database).then(() => {
         console.log("Succesfully connect to MongoDB.");
     })
         .catch(err => {
@@ -11,7 +11,8 @@ mongoose.connect(uri).then(() => {
             process.exit();
         });
 
-
+module.exports = {Mongoose:mongoose};
+/*
 const userSchema = new mongoose.Schema({
     username: String,
     email: String
@@ -19,3 +20,4 @@ const userSchema = new mongoose.Schema({
 );
 
 module.exports = {Mongoose:mongoose, UserSchema:userSchema};
+*/

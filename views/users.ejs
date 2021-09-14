@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
  
 <head>
     <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
  
-<body>
-    <h1 class="text-center title-1"> Cadastro de Usuario </h1>
+<body class="cadastro">
+    <center>
     <form action="/users" method="post">
-        <p>Username:<input type="text" name="username" /></p>
-        <p>Email:<input type="text" name="email" /></p>
-        <p><input type="submit" value="Salvar" /></p>
+        
+            <legend>Cadastro de Usuário</legend>
+            <label>Nome:</label><input class="campo_nome" type="text" name="nome" /></label>
+            <label>Sobrenome:</label><input class="" type="text" name="sobrenome" />
+            <label>Email:</label><input class="campo_email" type="text" name="email" />
+            <label>Idade:</label><input type="number" name="idade" />
+            <label>Cidade:</label><input type="text" name="cidade" />
+            <label>Estado:</label><input type="text" name="uf" />
+            <label>CEP:</label><input type="text" name="cep" />
+            <label>Senha:</label><input type="password" name="senha" />
+            <input type="submit" value="Salvar" />
+            <input type="button" name="cancela" onClick="window.location.href='http://localhost:3000/'" value="Voltar">
+        
     </form>
+</center>
 </body>
  
 </html>
