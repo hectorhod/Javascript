@@ -9,11 +9,18 @@
     <ul>
       <% docs.forEach(function(users){ %>
         <li>
-            <!--<%= users.username %> | <%= users.email %>-->
-            <a href="mailto:<%= users.email %>"><%= users.username %></a>
+            <%= users.nome %> <%= users.sobrenome %>
+            <ul>
+              <li><%= users.email %></li>
+              <li><%= users.idade %> anos</li>
+              <li><%= users.cidade %> - <%= users.uf %></li>
+              <li><%= users.cep %></li>
+            </ul>
+            <!--<a href="mailto:<%= users.email %>"><%= users.username %></a>-->
         </li>
       <% }) %>
     </ul>
+    <br><input type="submit" name="evento" onClick="window.location.href='http://localhost:3000/users'" value="Cadastrar">
   </body>
 </html>
 <!--
