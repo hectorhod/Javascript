@@ -12,12 +12,3 @@ mongoose.connect(server + database).then(() => {
         });
 
 module.exports = {Mongoose:mongoose};
-/*
-const userSchema = new mongoose.Schema({
-    username: String,
-    email: String
-}, { collection: 'users'}
-);
-
-module.exports = {Mongoose:mongoose, UserSchema:userSchema};
-*/
