@@ -1,20 +1,13 @@
-body, html {
+body {
   max-height: 100%;
   max-width: 100%;
   padding: 50px;
   font: 14px Helvetica, Arial, sans-serif;
-  /*background-image: linear-gradient(to bottom, rgb(24, 163, 255), white);*/
-  background-image: url('../images/bg_cadastro.jpg');
-  /*background-position: center;*/
+  background-image: url('../images/background.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/*.cadastro {
-  /*width: 100%;
-  height: 100%;
-  
-}*/
 
 a {
   color: #00B7FF;
