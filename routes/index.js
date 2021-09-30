@@ -39,7 +39,6 @@ router.get('/login', (req,res)=>{
 
 /* GET home page. */
 router.get('/', async (req, res) => {
-<<<<<<< HEAD
   if (!req.session.loggedIn) {
     
     res.redirect("/login");
@@ -50,12 +49,6 @@ router.get('/', async (req, res) => {
     res.render('index', { title: 'Lista de Clientes', docs });
   }
   
-=======
-  const Users = db.Mongoose.model('users', modelUser.UserSchema, 'users');
- 
-  const docs = await Users.find({}).lean().exec();
-  res.render('index', { title: 'Lista de Clientes', docs });
->>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
 });
 
 /* GET New User page. */
