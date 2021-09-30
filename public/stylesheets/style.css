@@ -3,15 +3,7 @@ body {
   max-width: 100%;
   padding: 50px;
   font: 14px Helvetica, Arial, sans-serif;
-<<<<<<< HEAD
   background-image: url('../images/background.jpg');
-=======
-  background-image: linear-gradient(to bottom, rgb(24, 163, 255), white);
-}
-
-.cadastro {
-  background-image: url('../images/bg_cadastro.jpg');
->>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,14 +43,11 @@ form {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 .loginForm {
   width: 420px;
   height: 200px;
 }
 
-=======
->>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
 legend {
   font-size: 20pt;
   font-weight: bold;
