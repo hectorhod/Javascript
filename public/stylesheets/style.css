@@ -19,7 +19,7 @@ ol {
 }
 
 ul {
-  background: #3399ff;
+  background: rgba(250, 250, 250, 0.288);
   padding: 20px;
 }
 
@@ -30,7 +30,7 @@ ol li {
 }
 
 ul li {
-  background: #cce5ff;
+  background: #cce5ff67;
   margin: 5px;
 }
 
