@@ -39,6 +39,7 @@ router.get('/login', (req,res)=>{
 
 /* GET home page. */
 router.get('/', async (req, res) => {
+<<<<<<< HEAD
   if (!req.session.loggedIn) {
     
     res.redirect("/login");
@@ -49,6 +50,12 @@ router.get('/', async (req, res) => {
     res.render('index', { title: 'Lista de Clientes', docs });
   }
   
+=======
+  const Users = db.Mongoose.model('users', modelUser.UserSchema, 'users');
+ 
+  const docs = await Users.find({}).lean().exec();
+  res.render('index', { title: 'Lista de Clientes', docs });
+>>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
 });
 
 /* GET New User page. */
@@ -58,10 +65,24 @@ router.get('/users', (req, res) => {
 
 // POST new user //
 router.post('/users', async (req, res, next) => {
+<<<<<<< HEAD
 
   const nome = req.body.nome;
   const sobrenome = req.body.sobrenome;
   const email = req.body.email;
+=======
+ /*
+  const username = req.body.username;
+  const email = req.body.email;
+ 
+  const Users = global.db.Mongoose.model('users', global.db.UserSchema, 'users');
+  const user = new Users({ username, email });
+*/
+  
+  const nome = req.body.nome;
+  const sobrenome = req.body.sobrenome;
+  const email = req.body.email;
+>>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
   const idade = req.body.idade;
   const cidade = req.body.cidade;
   const uf = req.body.uf;
@@ -71,6 +92,10 @@ router.post('/users', async (req, res, next) => {
   const Users = db.Mongoose.model('users', modelUser.UserSchema, 'users');
   const user = new Users({nome,sobrenome,email,idade,cidade,uf,cep,senha});
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b549a05625d5dc0404eb9ac5feaebf5a2df18a6
   try {
     await user.save();
     console.log("Usuario criado com exito");
